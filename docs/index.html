@@ -10,39 +10,6 @@
 </head>
 <body>
 
-<div class="w3-container" ng-app="myApp" ng-controller="myCtrl">
-  <div class="w3-card-4">
-    <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
-      <h1>Year 3 Math Topics List</h1>
-    </header>
-
-    <div class="w3-container w3-card">
-     <ul class="w3-ul w3-large" ng-if="topic.year==3" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
-	  <li>{{topic.name}} <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></li>
-	</ul>
-    </div>
-
-    <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
-      <h5>Manasvi's Year Math 3 Topics</h5>
-    </footer>
-</div>
-</br>	
-<div class="w3-card-4">
-    <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
-      <h1>Year 4 Math Topics List</h1>
-    </header>
-
-    <div class="w3-container w3-card">
-     <ul class="w3-ul w3-large" ng-if="topic.year==4" ng-repeat="topic in topics | filter: {year:4 } " ng-swipe-right="right(topic)">
-	  <li>{{topic.name}} <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></li>
-	</ul>
-    </div>
-
-    <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
-      <h5>Manasvi's Year 4 Math Topics</h5>
-    </footer>
-  </div>	
-</div>
 </br>	
 <div class="w3-card-4">
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
