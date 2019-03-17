@@ -40,9 +40,7 @@
     <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
       <h5>Manasvi's Year 4 Math Topics</h5>
     </footer>
-  </div>	
 </div>
-
 </br>	
 <div class="w3-card-4">
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
@@ -50,7 +48,7 @@
     </header>
 
     <div class="w3-container w3-card">
-     <ul class="w3-ul w3-large" ng-if="topic.year==3" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
+     <ul class="w3-ul w3-large" ng-if="topic.year==5" ng-repeat="topic in topics | filter: {year:5 } " ng-swipe-right="right(topic)">
 	  <li>{{topic.name}} <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></li>
 	</ul>
     </div>
@@ -58,8 +56,7 @@
     <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
       <h5>Manasvi's Year 5 Math Topics</h5>
     </footer>
-  </div>	
-</div>
+</div>	
 </br>	
 <div class="w3-card-4">
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
@@ -67,7 +64,7 @@
     </header>
 
     <div class="w3-container w3-card">
-     <ul class="w3-ul w3-large" ng-if="topic.year==4" ng-repeat="topic in topics | filter: {year:4 } " ng-swipe-right="right(topic)">
+     <ul class="w3-ul w3-large" ng-if="topic.year==6" ng-repeat="topic in topics | filter: {year:6 } " ng-swipe-right="right(topic)">
 	  <li>{{topic.name}} <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></li>
 	</ul>
     </div>
@@ -75,7 +72,7 @@
     <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
       <h5>Manasvi's Year 6 Math Topics</h5>
     </footer>
-  </div>	
+</div>	
 </div>
 	
 </body>
