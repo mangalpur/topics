@@ -1,6 +1,6 @@
 var app = angular.module('myApp',  ['ngTouch']);
 app.controller('myCtrl', function($scope, $http, $timeout) {
-  $http.get("./data/topics.json").then(function (response) {
+  $http.get("./data/maths-topics.json").then(function (response) {
       $scope.topics = response.data;
 	  $scope.showActions = false;
 	  $scope.timedOut = false;
