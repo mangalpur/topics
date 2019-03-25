@@ -87,3 +87,9 @@ html {
 .container {
   padding: 2px 16px;
 }
+
+.cards-list {
+    height: 900px;
+    overflow: auto;
+    width: 300px;
+}
