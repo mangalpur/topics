@@ -96,6 +96,7 @@ html {
 	margin: 0 auto;
     height: 900px;
     overflow: auto;
+	width: 50%;
 }
 
 .rows {
@@ -103,7 +104,6 @@ html {
     flex-direction: row;
     justify-content: space-between;
     border: 1px black solid;
-    
 	margin: 0 auto;
     height: 900px;
 }
