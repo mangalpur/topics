@@ -14,20 +14,21 @@
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
       <h1>Year 3 Math Topics List</h1>
     </header>
-
-	<div class="cards-list">
-		<div class="card" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
-		   <div class="container" >
-			 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
-			 <p>{{topic.name}}</p> 
+	<div class="rows">
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
 			</div>
 		</div>
-	</div>
-	<div class="cards-list">
-		<div class="card" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
-		   <div class="container" >
-			 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
-			 <p>{{topic.name}}</p> 
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
+			   <div class="container" >
+				 <h4><b>1{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
 			</div>
 		</div>
 	</div>

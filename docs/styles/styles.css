@@ -98,3 +98,14 @@ html {
     overflow: auto;
     width: 300px;
 }
+
+.rows {
+	display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px black solid;
+    
+	margin: 0 auto;
+    height: 900px;
+    overflow: auto;
+}
