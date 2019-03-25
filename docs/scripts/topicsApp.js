@@ -8,10 +8,13 @@ app.controller('myCtrl', function($scope, $http, $timeout) {
 
   $timeout( function(){ $scope.timed(); }, 60000*5);  
    $scope.right= function(topic){
-		topic.year=1;
+		topic.count=1;
 		$scope.showActions = !$scope.showActions;
    };
-   
+   $scope.left= function(topic){
+		topic.count=0;
+		$scope.showActions = !$scope.showActions;
+   };
    $scope.timed = function(){
      $scope.timedOut = !$scope.timedOut;
 	// var audio = new Audio('http://localhost:3000/wordsApp/sounds/sound1.mp4');

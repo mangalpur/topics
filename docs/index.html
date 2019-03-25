@@ -16,7 +16,7 @@
     </header>
 	<div class="rows">
 		<div class="cards-list">
-			<div class="card" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
+			<div class="card" ng-repeat="topic in topics | filter: {year:3 , count :0} " ng-swipe-right="right(topic)">
 			   <div class="container" >
 				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
 				 <p>{{topic.name}}</p> 
@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class="cards-list">
-			<div class="card" ng-repeat="topic in topics | filter: {year:3 } " ng-swipe-right="right(topic)">
+			<div class="card" ng-repeat="topic in topics | filter: {year:3 , count: 1} " ng-swipe-left="left(topic)">
 			   <div class="container" >
 				 <h4><b>1{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
 				 <p>{{topic.name}}</p> 
