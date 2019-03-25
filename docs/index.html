@@ -26,7 +26,7 @@
 		<div class="cards-list">
 			<div class="card" ng-repeat="topic in topics | filter: {year:3 , count: 1} " ng-swipe-left="left(topic)">
 			   <div class="container" >
-				 <h4><b>1{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
 				 <p>{{topic.name}}</p> 
 				</div>
 			</div>
@@ -42,12 +42,24 @@
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
       <h1>Year 4 Math Topics List</h1>
     </header>
-	<div class="card" ng-repeat="topic in topics | filter: {year:4 } " ng-swipe-right="right(topic)">
-       <div class="container" >
-         <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
-         <p>{{topic.name}}</p> 
-        </div>
-    </div>
+	<div class="rows">
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:4 , count :0} " ng-swipe-right="right(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
+			</div>
+		</div>
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:4 , count: 1} " ng-swipe-left="left(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
+			</div>
+		</div>
+	</div>
 
     <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
       <h5>Manasvi's Year 4 Math Topics</h5>
@@ -58,13 +70,24 @@
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
       <h1>Year 5 Math Topics List</h1>
     </header>
-	<div class="card" ng-repeat="topic in topics | filter: {year:5 } " ng-swipe-right="right(topic)">
-       <div class="container" >
-         <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
-         <p>{{topic.name}}</p> 
-        </div>
-    </div>
-
+	<div class="rows">
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:5 , count :0} " ng-swipe-right="right(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
+			</div>
+		</div>
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:5 , count: 1} " ng-swipe-left="left(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
+			</div>
+		</div>
+	</div>
     <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
       <h5>Manasvi's Year 5 Math Topics</h5>
     </footer>
@@ -74,12 +97,24 @@
     <header class="w3-container header" ng-class="timedOut ? 'w3-purple' : 'w3-blue'" >
       <h1>Year 6 Math Topics List</h1>
     </header>
-	<div class="card" ng-repeat="topic in topics | filter: {year:6 } " ng-swipe-right="right(topic)">
-       <div class="container" >
-         <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
-         <p>{{topic.name}}</p> 
-        </div>
-    </div>
+	<div class="rows">
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:6 , count :0} " ng-swipe-right="right(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
+			</div>
+		</div>
+		<div class="cards-list">
+			<div class="card" ng-repeat="topic in topics | filter: {year:6 , count: 1} " ng-swipe-left="left(topic)">
+			   <div class="container" >
+				 <h4><b>{{topic.section}}</b> <span class="w3-badge w3-large w3-yellow">{{topic.year}}</span></h4> 
+				 <p>{{topic.name}}</p> 
+				</div>
+			</div>
+		</div>
+	</div>
 
     <footer class="w3-container w3-blue" ng-class="timedOut ? 'w3-purple' : 'w3-blue'">
       <h5>Manasvi's Year 6 Math Topics</h5>
